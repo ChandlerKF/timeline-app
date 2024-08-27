@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Timeline</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <button id="calendar-icon">📅</button>
+        </div>
+        <div id="timeline-header" class="timeline-header"></div>
+        <div id="timeline-body" class="timeline-body"></div>
+        <div id="card-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h2>Card Details</h2>
+                <label for="card-title">Title:</label>
+                <input type="text" id="card-title">
+                <label for="card-color">Color:</label>
+                <input type="color" id="card-color">
+                <label for="card-status">Status:</label>
+                <select id="card-status">
+                    <option value="not-started">Not Started</option>
+                    <option value="to-do">To Do</option>
+                    <option value="completed">Completed</option>
+                </select>
+                <label for="card-assignee">Assignee:</label>
+                <input type="text" id="card-assignee">
+                <label for="card-start-date">Start Date:</label>
+                <input type="date" id="card-start-date">
+                <label for="card-end-date">End Date:</label>
+                <input type="date" id="card-end-date">
+                <label for="card-tags">Tags:</label>
+                <input type="text" id="card-tags">
+                <label for="card-details">Details:</label>
+                <textarea id="card-details"></textarea>
+                <button id="save-card">Save</button>
+            </div>
+        </div>
+        <button id="add-row">Add Row</button>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
